@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "shamba_canister_backend": {
+      "main": "src/shamba_canister_backend/main.mo",
+      "type": "motoko"
+    },
+    "shamba_canister_frontend": {
+      "dependencies": [
+        "shamba_canister_backend"
+      ],
+      "source": [
+        "src/shamba_canister_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "shamba_canister_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
